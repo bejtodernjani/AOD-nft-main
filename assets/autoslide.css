@@ -52,7 +52,7 @@
   
   .left-img-slide {
     display: inline-block;
-    animation: 20s slide infinite linear;
+    animation: 30s slide infinite linear;
   }
   
   .left-img-slide img {
@@ -95,7 +95,7 @@
  
   .right-img-slide {
     display: inline-block;
-    animation: 25s slide2 infinite linear;
+    animation: 30s slide2 infinite linear;
   }
   
   .right-img-slide img {
