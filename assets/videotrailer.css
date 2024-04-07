@@ -1,0 +1,20 @@
+.videotrailer {
+  background-size: cover; 
+  background-position: center; 
+  padding: 20px;
+}
+
+.videotrailer video {
+  width: 90%; 
+  height: auto;
+  border: 1px solid #333; 
+  border-radius: 5px; 
+}
+
+@media only screen and (max-width: 600px) {
+
+  .videotrailer video{
+    width: 100%;
+  }
+}
+

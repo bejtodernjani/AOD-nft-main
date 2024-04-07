@@ -1,0 +1,84 @@
+/*ABOUT US*/
+
+.aboutus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding: 0px;
+    margin-top: 130px;
+    background-color: black;
+    position: relative;
+   
+    
+  }
+  
+  .aboutus img {
+    width: 550px;
+    height: 20%;
+    border-radius: 10px;
+    margin: 10px 10px 40px 10px;
+  }
+  
+  .aboutus-details {
+    max-width: 600px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  
+  
+  .aboutus-details p {
+    color: #7a7a7a;
+    font-size:30px;
+  }
+
+    /* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .aboutus img{
+    width: 300px;
+  }
+
+  .aboutus-details p{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 175px;
+  }
+}
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .aboutus {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+  
+    .aboutus img {
+      width: 70%;
+      margin: 10px 0 20px 0;
+    }
+  
+    .aboutus-details {
+      max-width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .aboutus-details p{
+      font-size: 20px;
+    }
+  }
+  
+  #card-link {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

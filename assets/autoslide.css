@@ -1,0 +1,171 @@
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+  .img-slide{
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  .left-slide {
+    overflow: hidden;
+    padding: 20px;
+    white-space: nowrap;
+    position: relative;
+    float: left; 
+    margin-top: 150px;
+  }
+  
+  .left-slide:before,
+  .left-slide::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .left-slide::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+  }
+  
+  .left-slide:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+  }
+  
+  .left-img-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+  }
+  
+  .left-img-slide img {
+    display: inline-block;
+    margin: 0 10px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+  
+  .right-slide {
+    overflow: hidden;
+    padding: 20px;
+    white-space: nowrap;
+    position: relative;
+    float: right; 
+    margin-bottom: 200px;
+  }
+  
+  .right-slide:before,
+  .right-slide::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .right-slide::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+  }
+  
+  .right-slide:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+  }
+  
+ 
+  .right-img-slide {
+    display: inline-block;
+    animation: 25s slide2 infinite linear;
+  }
+  
+  .right-img-slide img {
+    display: inline-block;
+    margin: 0 10px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+  @media screen and (max-width: 768px) {
+    .left-slide::before,
+    .left-slide::after {
+      position: absolute;
+      top: 0;
+      width: 80px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+
+
+    .right-slide:before,
+    .right-slide::after {
+      position: absolute;
+      top: 0;
+      width: 80px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+    
+    .left-slide::before {
+      left: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+    }
+    
+    .left-slide::after {
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+    }
+
+    .left-img-slide {
+      animation-duration: 7s; 
+  }
+
+    .right-img-slide {
+        animation-duration: 7s; 
+    }
+  
+  }
+
+
+  /* Your CSS styles for small phones go here */
+@media only screen and (max-width: 480px){
+  .left-slide,
+  .right-slide {
+    padding: 0; /* Remove padding for smaller devices */
+  }
+
+  .left-img-slide img,
+  .right-img-slide img {
+    margin: 0 5px; /* Adjust margin for smaller devices */
+    height: 150px; /* Adjust image height for smaller devices */
+  }
+
+  .left-slide::before,
+  .left-slide::after,
+  .right-slide::before,
+  .right-slide::after {
+    width: 20px; /* Further reduce width for smaller devices */
+  }
+
+}
