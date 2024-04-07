@@ -19,7 +19,7 @@
 }
 
 .text-box {
-  padding: 20px 30px; 
+  padding: 20px 30px;
   position: relative;
   border-radius: 6px;
   border: 3px solid #fff;
@@ -37,7 +37,7 @@
   content: "";
   position: absolute;
   width: 6px;
-  height: 195px;
+  height: 194px;
   background: #fff;
   top: 0;
   left: 50%;
@@ -76,4 +76,34 @@
   border-bottom: 15px solid transparent;
   border-right: 15px solid #fff;
   left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-roadmap {
+    margin: 50px auto;
+  }
+  .timeline-roadmap::after {
+    left: 31px;
+    height: 200px;
+  }
+  .container-roadmap {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .left-container {
+    left: 0;
+  }
+  .right-container {
+    left: 0;
+  }
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px;
+  }
 }
