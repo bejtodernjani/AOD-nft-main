@@ -84,7 +84,7 @@
   }
   .timeline-roadmap::after {
     left: 31px;
-    height: 200px;
+    height: 230px;
   }
   .container-roadmap {
     width: 100%;
@@ -105,5 +105,11 @@
     border-right: 15px solid #fff;
     border-left: 0;
     left: -15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .timeline-roadmap::after {
+    height: 300px;
   }
 }
